@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <title>Document</title>
+</head>
+<body class="text-white font-['Overpass'] bg-gradient-to-l  from-[#e34c99] to-[#209ba2]">
+    <header
+      class="fixed xl:block w-full py-4 lg:px-0 px-5 z-[999] duration-300 animate__animated animate__fadeInDown"
+    >
+      <nav class="flex justify-evenly md:justify-between items-center max-w-6xl mx-auto px-2">
+        <div class="flex gap-0 items-center">
+
+          <div>
+            <h4 class="hidden md:block font-bold uppercase pl-12 md:pl-0 ">Ирина Александровна</h4>
+          </div>
+          <div class="flex md:hidden flex-col items-center justify-center md:justify-normal gap-x-8 gap-y-4 pl-12">
+            <div class="flex gap-8">
+                <a href=""><img src="img/tgw.svg" alt="" width="40px"></a> 
+                <a href=""><img src="img/vkw.svg" alt="" width="40px"></a> 
+                <a href=""><img src="img/innstaw.svg" alt="" width="40px"></a> 
+            </div>
+            <div class="font-bold text-lg text-white">
+                <a href="">7 917 315 0291</a>
+            </div>
+        </div>
+        </div>
+        <ul class="gap-10 md:flex hidden hover:*:text-primary *:duration-200">
+          <li class="hover:scale-125 hover:text-[#cd00db] duration-300">
+            <a href="#home">Главная</a>
+          </li>
+          <li class="hover:scale-125 hover:text-[#cd00db] duration-300">
+            <a href="#about">Обо мне</a>
+          </li>
+          <li class="hover:scale-125 hover:text-[#cd00db] duration-300">
+            <a href="#projects">Услуги</a>
+          </li>
+          <li class="hover:scale-125 hover:text-[#cd00db] duration-300">
+            <a href="#contact">Моя команда</a>
+          </li>
+          <li class="hover:scale-125 hover:text-[#cd00db] duration-300">
+            <a href="#otz">Отзовы</a>
+          </li>
+          <li class="hover:scale-125 hover:text-[#cd00db] duration-300">
+            <a href="#cont">контакты</a>
+          </li>
+          <li class="theme-switch hover:scale-125 hover:text-[#cd00db] duration-300">
+            <i class="fa-solid fa-circle-half-stroke cursor-pointer"></i>
+          </li>
+        </ul>
+        <div class="flex items-center gap-6">
+          <a href="tel:+79173150291">
+            <button class="hover:scale-125 hover:text-[#cd00db] duration-300 btn btn-outline md:!flex !hidden">
+              <i class="fa-regular fa-paper-plane "></i>7 917 315 0291
+            </button>
+          </a>
+          <span class="theme-switch md:hidden">
+            <i class="fa-solid fa-circle-half-stroke cursor-pointer"></i>
+          </span>
+          <span id="menubar" class="cursor-pointer md:hidden text-xl">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+        </div>
+      </nav>
+    </header>
+
+    <span
+      id="backdrop"
+      class="fixed h-screen hidden bg-black/10 backdrop-blur-sm z-[997] inset-0 w-full"
+    ></span>
+
+
+
+    <!-- Home -->
+    <section
+      id="home"
+      class=" pt-32 container flex justify-center mx-auto relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-heroLight before:bg-no-repeat before:bg-top before:size-full before:-z-[1] before:transform before:-translate-x-1/2"
+    >
+      <div
+        class="w-full pt-20 grid md:grid-cols-6 h-full items-center max-w-6xl justify-around"
+      >
+        <div
+          class="lg:col-span-2 sm:pl-2 md:col-span-3 md:text-left text-center animate__animated animate__fadeInLeft"
+        >
+          <div>
+            <h5 class="font-medium text-xl ">
+              Добро пожаловать..
+            </h5>
+            <h1
+              class="sm:text-5xl text-4xl leading-normal relative font-medium"
+            >
+              Я <span class="text-primary text-[white]">Ирина.</span> 
+              Ветеринарный врач
+            </h1>
+          </div>
+          <div
+            class="flex  flex-col justify-center md:justify-normal  gap-6 mt-9"
+          >
+            <p class="text-xl">Социальные сети</p>
+            <div class="flex justify-center md:justify-normal gap-3">
+                <a href=""><img src="img/tgw.svg" alt="" width="50px"></a> 
+                <a href=""><img src="img/vkw.svg" alt="" width="50px"></a> 
+                <a href=""><img src="img/innstaw.svg" alt="" width="50px"></a> 
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-2 md:col-span-3 animate__animated animate__fadeInUp">
+          <img
+            src="img/irina11.png"
+            class="w-2/3 mx-auto md:w-full max-w-96 md:mt-0 mt-5 rounded-l-2xl "
+            alt=""
+            width="384px" height="382px"
+          />
+        </div>
+        <div
+          class="lg:col-span-2 md:col-span-6  mt-2 bg-gradient-to-t lg:bg-gradient-to-l  from-[#cd00db]  rounded-2xl md:rounded-r-2xl lg:h-96 md:h-auto h-96 w-full animate__animated animate__fadeInRight"
+        >
+          <ul
+            class="text-2xl data-[slot=count]:*:text-3xl data-[slot=count]:*:font-bold leading-[3.14rem] text-center pt-5 lg:block md:flex items-center justify-between"
+          >
+            <li class="text-white" data-slot="count">13</li>
+            <li>Лет<span class="text-primary"> работы</span></li>
+            <br />
+            <li class="text-white" data-slot="count">БАЛУ64</li>
+            <li>Место <span class="text-primary">работы</span></li>
+            <br>
+            <li class="text-white" data-slot="count">САРАТОВ</li>
+            <li>Мой <span class="text-primary">город</span></li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class=" container pt-60 flex-center py-20">
+      <div class="">
+        <div class="animate__animated animate__fadeInUpBig">
+          <h3 class="section-h">ОБО МНЕ</h3>
+          <p class="px-2  text-xl text-center">
+            Всем привет, меня зовут Беспалова Ирина  Александровна  и я ветеринарный врач. <br>
+            На данный момент я принимаю в городе Саратове, в клинике Балу на  Чернышевского  97. <br> <br>
+            В 2012 году я закончила Саратовский ГАУ им. Вавилова по  специальности ветеринария. <br>
+            А работать начала еще  в 2011 году в клинике «Ветеринарный госпитале», и была обычным ассистентом. <br>
+             Затем добралась до  лаборатории, а дальше начала осваивать узкую специализацию дерматолога, по  которой меня и знают. <br> <br>
+            Я не однократно  проходила множество курсов в Москве и СПБ, в таких клиниках, как «Белый клык»;  «Биоконтроль»; «Сколково.вет» и д.р. Посещала множества конференций, прошла 2 полных модуля и закрыла свой гештальт в Школе ветеринарной дерматологии Светланы Беловы. И думаю это  еще не  конец конечно. <br>
+            
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="reveal fade-bottom container flex-center pt-20 py-40">
+      <div class=" text-center text-balance">
+        <h3 class=" section-h">УСЛУГИ</h3>
+        <div>
+            <ul class="grid-cols-2 md:grid-cols-3 justify-center grid gap-x-10 gap-y-5 px-2">
+                <li class="flex items-center gap-5">
+                    <img class="w-6 hidden lg:block" src="img/checkbox.svg" alt="" loading="lazy" width="60px" height="60px">
+                        <div class="text-base md:text-2xl text-left">
+                        <p>Прием врача общего профиля</p>
+                        <p class="text-white">550 - рублей Первичный прием</p>
+                    </div>
+                </li>
+                <li class="flex items-center gap-5">
+                    <img class="w-6 hidden lg:block" src="img/checkbox.svg" alt="" loading="lazy" width="60px" height="60px">
+                        <div class="text-base md:text-2xl text-left">
+                        <p>Консультация дерматолога</p>
+                        <p class="text-white">1000 - первичный прием</p>
+                    </div>
+                </li>
+                <li class="flex items-center gap-5">
+                    <img class="w-6 hidden lg:block" src="img/checkbox.svg" alt="" loading="lazy" width="60px" height="60px">
+                        <div class="text-base md:text-2xl text-left">
+                        <p>Вызов врача на дом</p>
+                        <p class="text-white">1500 - рублей</p>
+                    </div>
+                </li>
+                <li class="flex items-center gap-5">
+                    <img class="w-6 hidden lg:block" src="img/checkbox.svg" alt="" loading="lazy" width="60px" height="60px">
+                        <div class="text-base md:text-2xl text-left">
+                        <p>Вакцинация животного</p>
+                        <p class="text-white">От 1600 до 2500 рублей</p>
+                    </div>
+                </li>
+                <li class="flex items-center gap-5">
+                    <img class="w-6 hidden lg:block" src="img/checkbox.svg" alt="" loading="lazy" width="60px" height="60px">
+                        <div class="text-base md:text-2xl text-left">
+                            <p>Общий анализ крови</p>
+                            <p class="text-white">600 - рублей</p>
+                    </div>
+                </li>
+                <li class="flex items-center gap-5">
+                    <img class="w-6 hidden lg:block" src="img/checkbox.svg" alt="" loading="lazy" width="60px" height="60px">
+                        <div class="text-base md:text-2xl text-left">
+                        <p>Биохимия крови</p>
+                        <p class="text-white ">От 1100 - рублей</p>
+                    </div>
+                </li>
+                <li class="flex items-center gap-5">
+                    <img class="w-6 hidden lg:block" src="img/checkbox.svg" alt="" loading="lazy" width="60px" height="60px">
+                        <div class="text-base md:text-2xl text-left">
+                        <p>Кастрация кота</p>
+                        <p class="text-white">1600 - рублей</p>
+                    </div>
+                </li>
+                <li class="flex items-center gap-5">
+                    <img class="w-6 hidden lg:block" src="img/checkbox.svg" alt="" loading="lazy" width="60px" height="60px">
+                        <div class="text-base md:text-2xl text-left">
+                        <p>Стерилизация кошки</p>
+                        <p class="text-white">2600 - рублей</p>
+                    </div>
+                </li>
+                <li class="flex items-center gap-5">
+                    <img class="w-6 hidden lg:block" src="img/checkbox.svg" alt="" loading="lazy" width="60px" height="60px">
+                        <div class="text-base md:text-2xl text-left">
+                        <p>Чистка Зубов</p>
+                        <p class="text-white">От 2000 - рублей</p>
+                    </div>
+                </li>
+                <li class="flex items-center gap-5">
+                    <img class="w-6 hidden lg:block" src="img/checkbox.svg" alt="" loading="lazy" width="60px" height="60px">
+                        <div class="text-base md:text-2xl text-left">
+                        <p>Опухолевая цитология</p>
+                        <p class="text-white">1000 - рублей</p>
+                    </div>
+                </li>
+                <li class="flex items-center gap-5">
+                    <img class="w-6 hidden lg:block" src="img/checkbox.svg" alt="" loading="lazy" width="60px" height="60px">
+                        <div class="text-base md:text-2xl text-left">
+                        <p>УЗИ диагностика</p>
+                        <p class="text-white">От 500 - рублей</p>
+                    </div>
+                </li>
+                <li class="flex items-center gap-5">
+                    <img class="w-6 hidden lg:block" src="img/checkbox.svg" alt="" loading="lazy" width="60px" height="60px">
+                        <div class="text-base md:text-2xl text-left">
+                        <p>Чипирование животных</p>
+                        <p class="text-white">От 1000 - рублей</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section
+      id="contact"
+      class="reveal fade-bottom container relative max-w-5xl mx-auto flex-center px-5 "
+    >
+      <div class="pb-10">
+        <div class="text-center">
+            <h3 class="section-h">МОЯ КОМАНДА</h3>
+        </div>
+        <div
+          class="*:w-full grid-cols-1 md:grid grid-cols-2  md:px-0 px-10 *:h-full *:object-cover  *:rounded-md gap-24 *:cursor-pointer group hover:*:!grayscale-0 *:hover:grayscale *:duration-1000"
+        >
+          <div class="group flex flex-col">
+              <img src="img/kris.jpg" class="" alt="" loading="lazy" width="444px" height="590px" />
+            <h3 class="font-['Oswald'] font-bold text-3xl pb-5">Усаченко Кристина</h3>
+            <p class=" text-2xl">Закончила ФТК им. Н.И. Вавилова в 2022 году 
+                Сейчас обучаюсь в СГУГБиИ им. Н.И. Вавилова 
+                С 1 марта 2021 работаю ассистентом ветеринарного врача в ветеринарной клинике «Балу» 
+                На данный момент в процессе обучения по терапии животных.
+            </p>
+          </div>
+          <div class="group flex flex-col">
+              <img src="img/nastya.jpg" class="" alt="" loading="lazy" width="444px" height="590px"  />
+            <h3 class="font-['Oswald'] text-right font-bold text-3xl pb-5">Ащаулова Анастасия</h3>
+            <p class=" text-2xl text-right">учусь на 4 курсе в финансово- технологическом колледже, в этом году заканчиваю обучение и поступаю в Сгау. 
+                Из увлечений были стрижки животных.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section section id="otz" class="reveal fade-left container flex-center py-20">
+        <div>
+            <div class="text-center ">
+                <h3 class="section-h">ОТЗЫВЫ</h3>
+            </div>
+            <div>
+                <ul class="space-y-2 font-['Podkova'] text-[#ffffff] grid gap-5 grid-cols-1 2xl:grid-cols-2 items-center">
+                    <li class="">
+                      <img class="rounded-xl border-4 border-[#cd00db] hover:scale-125 duration-300 w-[500px] xl:w-[550px] 2xl:w-[650px]" src="img/otz1.png" alt="" loading="lazy" height="180px" width="650px">
+                    </li>
+                    <li class="">
+                      <img class="rounded-xl border-4 border-[#cd00db] hover:scale-125 duration-300 w-[500px] xl:w-[550px] 2xl:w-[650px]" src="img/otz2.png" alt="" loading="lazy" height="180px" width="650px">
+                    </li>
+                    <li class="">
+                      <img class="rounded-xl border-4 border-[#cd00db] hover:scale-125 duration-300 w-[500px] xl:w-[550px] 2xl:w-[650px]" src="img/otz3.png" alt="" loading="lazy" height="180px" width="650px">
+                    </li>
+                    <li class="hidden 2xl:block">
+                      <img class="rounded-xl border-4 border-[#cd00db] hover:scale-125 duration-300" src="img/otz4.png" alt="" loading="lazy" height="180px" width="650px">
+                    </li>
+                    <li class="hidden 2xl:block">
+                      <img class="rounded-xl border-4 border-[#cd00db] hover:scale-125 duration-300" src="img/otz5.png" alt="" loading="lazy" height="180px" width="650px">
+                    </li>
+                    <li class="hidden 2xl:block">
+                      <img class="rounded-xl border-4 border-[#cd00db] hover:scale-125 duration-300" src="img/otz6.png" alt="" loading="lazy" height="180px" width="650px">
+                    </li>
+                  </ul>
+                  <div class="pt-5 text-center md:text-left">
+                    <a class="text-xl md:text-3xl py-2 px-4 border-2 rounded-lg bg-black bg-opacity-40 hover:text-[#cd00db] hover:border-[#cd00db] duration-300" href="">Смотреть все отзывы</a>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <section section id="cont" class="reveal fade-right container flex-center py-20">
+        <div class="flex justify-center flex-col">
+            <div class="text-center ">
+                <h3 class="section-h">КОНТАКТЫ</h3>
+            </div>
+                    <div class="flex justify-center flex-col items-center">
+                        <ul class="space-y-2 font-['Podkova'] flex justify-center md:justify-normal items-baseline gap-4 md:gap-14">
+                          <li class="flex flex-col text-xl items-center gap-y-3">
+                            <a href=""><img class=" animate-pulse w-[70px] lg:w-[140px]" width="140px"  height="140px" src="img/innstaw.svg" alt="" loading="lazy"   ></a>
+                            <p class=" font-['Oswald'] font-bold text-lg md:text-2xl">INSTAGRAM</p>
+                          </li>
+                          <li class="flex flex-col text-xl items-center gap-y-3">
+                            <a href=""><img class=" animate-pulse w-[70px] lg:w-[140px]" width="140px" height="140px"  src="img/vkw.svg" alt="" loading="lazy"   ></a>
+                            <p class=" font-['Oswald'] font-bold text-lg md:text-2xl">VKONTAKTE</p>
+                          </li>
+                          <li class="flex flex-col text-xl items-center gap-y-3">
+                            <a href=""><img class=" animate-pulse w-[70px] lg:w-[140px]" width="140px" height="140px"  src="img/tgw.svg" alt="" loading="lazy" ></a>
+                            <p class=" font-['Oswald'] font-bold text-lg md:text-2xl">TELEGRAM</p>
+                          </li>
+                        </ul>
+                        <div class="grid grid-cols-1  justify-items-center gap-y-5 pt-20 text-sm md:text-2xl font-bold">
+                          <a href="">+7 917 315 0291</a>
+                          <p>Г.Саратов , ул.Чернышевского 97.</p>
+                          <p>Будние с 10 до 19:00</p>
+                          <p>выходные с 10 до 17:00</p>
+                        </div>
+                    </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class=" bg-gradient-to-l  from-[#e34c99] to-[#209ba2] text-center py-2 ">
+      <ul class="grid-cols-2 grid md:flex justify-center mx-auto text-white gap-5 py-4 text-base t md:text-lg font-semibold">
+        <li class="hover:scale-125 hover:text-white duration-300">
+            <a class="" href="#home">Главная</a>
+          </li>
+          <li class="hover:scale-125 hover:text-white duration-300">
+            <a class="" href="#about">Обо мне</a>
+          </li>
+          <li class="hover:scale-125 hover:text-white duration-300">
+            <a class="" href="#projects">Услуги</a>
+          </li>
+          <li class="hover:scale-125 hover:text-white duration-300">
+            <a class="" href="#contact">Моя команда</a>
+          </li>
+          <li class="hover:scale-125 hover:text-white duration-300">
+            <a class="" href="#otz">Отзовы</a>
+          </li>
+          <li class="hover:scale-125 hover:text-white duration-300">
+            <a class="" href="#cont">контакты</a>
+          </li>
+          <li class="theme-switch">
+            <i class="fa-solid fa-circle-half-stroke cursor-pointer"></i>
+          </li>
+      </ul>
+      <div class="border-t-2 border-[#cd00db] flex justify-between pt-1 px-6">
+        <p>©️ Все права защищены</p>
+        <a class="font-bold hover:text-[#cd00db] duration-300" href="">BY BLMS</a>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+    <script>
+      const header = document.querySelector("header");
+
+      const toggleClasses = (element, classes, condition) => {
+        classes.forEach((className) => {
+          element.classList.toggle(className, condition);
+        });
+      };
+
+      window.addEventListener("scroll", () => {
+        toggleClasses(
+          header,
+          [
+            "shadow-lg",
+            "shadow-[#cd00db]",
+            "bg-[#209ba2]",
+          ],
+          window.scrollY > 0
+        );
+      });
+    </script>
+
+    <script>
+        function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+    </script>
+  </body>
+</html>
